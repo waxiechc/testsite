@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вигравай подарунки</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts\AcuminR.otf" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fa/css/all.css">
+    <link rel="stylesheet" href="style-global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-responsive.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body id="home">
+
+<header>
+    <div class="container flex-sb-aic">
+        <a href="#" class="logo">
+            <img src="images/logo.svg" alt="">
+        </a>
+        <div class="menublock">
+            <a href="javascript:void();" class="showmenu"><i class="fa-solid fa-bars"></i></a>
+            <a href="javascript:void();" class="hidemenu"><i class="fa-solid fa-xmark"></i></a>
+            <nav id="headnav">
+                <ul>
+                    <li class="active"><a href="#home">Вгору</a></li>
+                    <li><a href="#projects">Список призів</a></li>
+                    <li><a href="#about">Умови участі</a></li>
+                    <li><a href="#contact">Заповнити форму</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <div class="visual">
+            <img src="images/pic1.jpg" alt="" class="img-default">
+        </div>
+        <div class="text">
+            <h1>Вигравай подарунки разом з Manitou</h1>
+            <p>Manitou — провідна французька компанія, яка спеціалізується на виробництві обладнання для підйому, транспортування та складування вантажів. Заснована у 1958 році, Manitou Group є світовим лідером у створенні телескопічних навантажувачів, складської, будівельної та сільськогосподарської техніки.
+
+				Компанія відома інноваційним підходом, надійністю продукції та екологічною відповідальністю, обслуговуючи клієнтів у понад 140 країнах через розгалужену дилерську мережу.</p>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="project-item flex-sb">
+            <div class="text">
+                <h3>Зимові подарунки</h3>
+                <p>Тут буде опис подарункiв</p>
+            </div>
+            <div class="visual">
+                <img src="images/pic3.jpg" alt="">
+            </div>
+        </div>
+        <div class="project-item flex-sb-rv">
+            <div class="text">
+                <h3></h3>
+                <p>Тут буде опис подарункiв</p>
+            </div>
+            <div class="visual">
+                <img src="images/pic4.jpg" alt="">
+            </div>
+        </div>
+        <div class="project-item flex-sb">
+            <div class="text">
+                <h3></h3>
+                <p>Тут буде опис подарункiв</p>
+            </div>
+            <div class="visual">
+                <img src="images/pic5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="text flex-sb">
+            <h2>Умови участі</h2>
+            <div class="para">
+                <p>Тут будуть описанi умови участi</p>
+            </div>
+        </div>
+        <div class="visual">
+            <img src="images/pic2.jpg" alt="" class="fit">
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <h2>Заповніть форму та станьте учасником розіграшу</h2>
+
+        <div class="contact-options flex-sb">
+            <div class="formarea">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contactform flex-sb">
+                    <!-- Ваш API ключ Web3Forms -->
+                    <input type="hidden" name="access_key" value="04a0ebbf-4599-4f0b-be63-65b695077e0f">
+					<input type="hidden" name="from_name" value="Rozigrash Manitou">
+
+                    <!-- Поля формы -->
+                    <fieldset class="half">
+                        <label for="name">П.І.Б.*</label>
+                        <input type="text" name="Ім`я" required>
+                    </fieldset>
+                    <fieldset class="half">
+                        <label for="phone">Телефон*</label>
+                        <input type="text" name="Телефон" pattern="^\d+$" required title="Введите только цифры">
+                    </fieldset>
+                    <fieldset class="half">
+                        <label for="model">Модель навантажувача Manitou*</label>
+                        <input type="text" name="Модель навантажувача Manitou" required>
+                    </fieldset>
+                    <fieldset class="half">
+                        <label for="serial_number">Серiйний номер навантажувача Manitou*</label>
+                        <input type="text" name="Серiйний номер навантажувача Manitou" required>
+                    </fieldset>
+
+                    <button type="submit" name="submit" id="submit">Відправити </i></button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <ul>
+                    <li>
+                        <a href="mailto:agroaliance@agroaliance.dp.ua"> <strong>Пошта:</strong> agroaliance@agroaliance.dp.ua</a>
+                    </li>
+                    <li>
+                        <a href="#"> <strong>Телефон:</strong> +38 (097) 732-33-33</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="container">
+        <div class="copyright">Copyright &copy; 2025 | All Rights Reserved</div>
+    </div>
+</footer>
+
+
+</body>
+</html>
